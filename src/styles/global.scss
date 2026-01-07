@@ -1,0 +1,18 @@
+@import './variables';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  font-family: $font-primary;
+  background: linear-gradient(180deg, #420D4B, #210635);
+  color: #F5D5E0;
+}

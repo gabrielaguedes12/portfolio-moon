@@ -1,0 +1,42 @@
+@import '../../styles/variables';
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+
+  .header_icon {
+    font-size: 30px;
+    background-color: $moon-light;
+    border-radius: 50%;
+    padding: 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header__menu {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    background-color: $moon-light;
+    border-radius: 999px;
+    padding: 0.5rem;
+  }
+
+  .header__menu a {
+    color: $moon-dark;
+    font-family: $font-secondary;
+    text-decoration: none;
+
+    padding: 0.5rem 1rem;
+    border-radius: 40px;
+    transition: background-color 0.2s ease;
+  }
+
+  .header__menu a:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+}

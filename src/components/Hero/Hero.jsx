@@ -1,5 +1,5 @@
 import './Hero.scss';
-import imagem from '../../img/perfilGabi.JPG';
+import imagem from '../../img/perfilGabi.png';
 
 export default function Hero(){
 
@@ -9,7 +9,9 @@ export default function Hero(){
             <div className='perfil'>
             <h1>Gabriela Guedes</h1>
             <img className='perfilGabi' src={imagem} alt="Gabriela Guedes" />
-            <p>Descrição sobre mim</p>
+            <p className='descricaoPerfil'>Para você me conhecer melhor, é necessário saber que carrego dois olhares complementares: 
+                o profundo da <strong>Fotografia</strong> e o analítico da <strong>Programação</strong>.A fotografia me ensinou a observar detalhes,
+                 contextos e histórias; a programação, a estruturar ideias, resolver problemas e transformar conceitos em soluções digitais.</p>
             </div>
         </section>
 
