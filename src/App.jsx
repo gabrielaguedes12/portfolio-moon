@@ -1,10 +1,18 @@
+import Hero from "./components/Hero/Hero";
+import Trajectory from "./components/Trajectory/Trajectory";
+import Skills from "./components/Skills/Skills";
+import Projects from "./components/Projects/Projects";
+import Contact from "./components/Contact/Contact";
 
 export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-       <p>Gabriela Guedes</p>
-      </header>
-    </div>
+   <>
+   <Hero/>
+   <Trajectory/>
+   <Skills/>
+   <Projects/>
+   <Contact/>
+   </>
+  
   );
 }
