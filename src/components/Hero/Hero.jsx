@@ -7,7 +7,7 @@ export default function Hero(){
         <>
         <section className='hero'>
             <div className='perfil'>
-            <h1>Gabriela Guedes</h1>
+            <h1 className='nomePerfil'>Gabriela Guedes</h1>
             <img className='perfilGabi' src={imagem} alt="Gabriela Guedes" />
             <p className='descricaoPerfil'>Para você me conhecer melhor, é necessário saber que carrego dois olhares complementares: 
                 o profundo da <strong>Fotografia</strong> e o analítico da <strong>Programação</strong>.A fotografia me ensinou a observar detalhes,
@@ -15,7 +15,7 @@ export default function Hero(){
             </div>
         </section>
 
-        <section className='hero2'>
+        <section className='hero_imagem'>
         <div className='imgMaior'>
             <img className='imgProgramacao' src="https://images.pexels.com/photos/16592498/pexels-photo-16592498.jpeg" alt="Programação" />
         </div>

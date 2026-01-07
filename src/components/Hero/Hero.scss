@@ -1,0 +1,35 @@
+@import '../../styles/variables';
+@import '../../styles/global.scss';
+
+.hero{
+    background-color: $moon-purple;
+ color: $moon-light;
+    .nomePerfil{
+        font-size: 40px;
+       
+        z-index: 2;
+    }
+
+    .perfilGabi {
+        display: flex;
+        justify-content: right;
+        align-items:center;
+    width: 25vw;
+    height: auto;
+    border-radius: 8px;
+}
+}
+
+.hero_imagem{
+.imgProgramacao{
+    width: 25vw;
+    height: auto;
+    border-radius: 8px;
+}
+.imgFotografia{
+    width: 25vw;
+    height: auto;
+    border-radius: 8px;
+}
+
+}
