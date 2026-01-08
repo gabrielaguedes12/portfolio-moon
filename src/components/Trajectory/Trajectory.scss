@@ -71,21 +71,21 @@
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
   }
 
-    .ensinoMedio, 
-    .faculdadeInfnet,
-    .faculdadeUnisuam {
-        background-color: $moon-purple;
-        border-radius: 12px;
-        width: auto;
-    }
+   .cardAcademico p,
+  .cardProfissional p {
+    font-size: 14px;
+    line-height: 1.5;
+    opacity: 0.9;
+    text-align: left;
+  }
+   .academico {
+    border-left: 4px solid $moon-purple;
+  }
 
-    .emgepron,
-    .ntlTecnologia,
-    .cieds {
-        background-color: $moon-purple;
-        border-radius: 12px;
-        height: 30%;
-    }
+  .trabalho {
+    border-left: 4px solid lighten($moon-purple, 15%);
+  }
+   
 
     @media (max-width: 768px) {
         .cardAcademico,
