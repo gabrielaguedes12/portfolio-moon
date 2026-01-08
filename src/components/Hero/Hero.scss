@@ -1,39 +1,61 @@
-@import '../../styles/variables';
-@import '../../styles/global.scss';
+@import "../../styles/variables";
+@import "../../styles/global.scss";
 
 .hero {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   gap: 2.5rem;
   padding: 3.5rem 2rem;
+  background: radial-gradient(circle at top left, lighten($moon-dark, 10%), $moon-deep);
 
-  background: radial-gradient(
-    circle at top left,
-    lighten($moon-dark, 10%),
-    $moon-deep
-  );
+
+//textos
+//alinhamento perfil
+.perfilTexto{
+ display: flex;
+  align-items: end;
 }
 
+//nomes
 .nomePerfil {
+  position: relative;
+  z-index: 2;  
   font-size: 54px;
   color: $moon-light;
   letter-spacing: 1px;
 }
 
-.descricaoPerfil {
+//alinhamento descricao
+.descricaoTexto{
+  z-index: 2;
+  position: relative;
+  display: flex;  
+}
+
+//descricao
+.descricaoPerfil {  
   color: lighten($moon-blue, 22%);
   max-width: 460px;
   line-height: 1.7;
 }
 
-.perfilGabi {
-  width: 15vw;
+//imagem
+//alinhamento
+.perfilImagem {
+  display: flex;
+  justify-content: flex-end;
+  
+}
+//estilo
+.perfilGabi { 
+  width: 25vw; 
   border-radius: 16px;
   border: 1px solid rgba(251, 215, 148, 0.12);
   background-color: rgba(17, 26, 25, 0.4);
   transition: all 0.35s ease;
 }
-
+//sombra
 .perfilGabi:hover {
   transform: translateY(-8px) scale(1.03);
   box-shadow:
@@ -41,30 +63,38 @@
     0 0 30px rgba(187, 107, 48, 0.45);
 }
 
-/*.hero_button button {
-  background: linear-gradient(
-    135deg,
-    $moon-purple,
-    darken($moon-purple, 12%)
-  );
+//botoes
+//alinhamento
+.hero_button {
+  display: flex;
+  align-items: end;
+  margin: 2%;
+  padding: 2%;
+}
 
+//manter o padrao
+.hero_button a{
+text-decoration: none;
+ color: $moon-light;
+}
+
+//estilizacao
+.hero_button button {
+  background: linear-gradient(135deg, $moon-purple, darken($moon-purple, 12%));
   color: $moon-light;
   border: none;
   padding: 14px 28px;
   border-radius: 10px;
-
   font-weight: 600;
   letter-spacing: 0.6px;
   cursor: pointer;
-
-  box-shadow:
-    0 10px 25px rgba(187, 107, 48, 0.35);
-
+  box-shadow: 0 10px 25px rgba(187, 107, 48, 0.35);
   transition: all 0.25s ease;
 }
 
+//sombra
 .hero_button button:hover {
   transform: translateY(-3px);
-  box-shadow:
-    0 16px 40px rgba(187, 107, 48, 0.55);
-}*/
+  box-shadow: 0 16px 40px rgba(187, 107, 48, 0.55);
+}
+}

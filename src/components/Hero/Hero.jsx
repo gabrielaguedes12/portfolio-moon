@@ -1,30 +1,39 @@
 import './Hero.scss';
 import imagem from '../../img/perfilGabi.png';
+import React from 'react';
 
 export default function Hero() {
+    const GitHub = () => {
+        window.location.href = 'https://github.com/gabrielaguedes12';
+    };
 
     return (
         <>
             <section className='hero'>
-                <div className='perfil'>
-                    <h1 className='nomePerfil'>Desenvolvedora Full-Stack</h1> 
+                <div className='hero_button'>
+                    <button type='button' >
+                        <a href="/curriculo/Gabriela_Guedes_Curriculo.pdf" download="Gabriela_Guedes_Curriculo">Currículo</a>
+                    </button>
+                    <button type="button" onClick={GitHub}>
+                        GitHub
+                    </button>
+                </div>
+
+                <div className='perfilTexto'>
+                    <h1 className='nomePerfil'>Desenvolvedora Full-Stack</h1>
                     <h1 className='nomePerfil'>Gabriela Guedes</h1>
-
-                    <img className='perfilGabi' src={imagem} alt="Gabriela Guedes" />
-
-                    <p className='descricaoPerfil'>Para você me conhecer melhor, é necessário saber que carrego dois olhares complementares:
+                </div>
+                <div className='descricaoTexto'>
+                    <p className='descricaoPerfil'>
+                        Para você me conhecer melhor, é necessário saber que carrego dois olhares complementares:
                         o profundo da <strong>Fotografia</strong> e o analítico da <strong>Programação</strong>. A fotografia me ensinou a observar detalhes,
                         contextos e histórias; a programação, a estruturar ideias, resolver problemas e transformar conceitos em soluções digitais.
                     </p>
                 </div>
 
-            
-            <section className='hero_button'>
-                <div>
-                    <button>Currículo</button>
-                    <button>GitHub</button>
+                <div className='perfilImagem'>
+                    <img className='perfilGabi' src={imagem} alt="Gabriela Guedes" />
                 </div>
-            </section>
             </section>
         </>
     );
