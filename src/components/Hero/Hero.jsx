@@ -1,15 +1,21 @@
 import './Hero.scss';
 import imagem from '../../img/perfilGabi.png';
+import { Link } from 'react-router-dom';
 import React from 'react';
 
 export default function Hero() {
     const GitHub = () => {
-        window.location.href = 'https://github.com/gabrielaguedes12';
+        window.open('https://github.com/gabrielaguedes12', '_blank');
     };
 
     return (
         <>
             <section className='hero'>
+                <div className='perfilTexto'>
+                    <h1 className='nomePerfil'>Desenvolvedora Full-Stack</h1>
+                    <h1 className='nomePerfil'>Gabriela Guedes</h1>
+                </div>
+
                 <div className='hero_button'>
                     <button type='button' >
                         <a href="/curriculo/Gabriela_Guedes_Curriculo.pdf" download="Gabriela_Guedes_Curriculo">Currículo</a>
@@ -19,20 +25,16 @@ export default function Hero() {
                     </button>
                 </div>
 
-                <div className='perfilTexto'>
-                    <h1 className='nomePerfil'>Desenvolvedora Full-Stack</h1>
-                    <h1 className='nomePerfil'>Gabriela Guedes</h1>
+                <div className='perfilImagem'>
+                    <img className='perfilGabi' src={imagem} alt="Gabriela Guedes" />
                 </div>
+                
                 <div className='descricaoTexto'>
                     <p className='descricaoPerfil'>
                         Para você me conhecer melhor, é necessário saber que carrego dois olhares complementares:
                         o profundo da <strong>Fotografia</strong> e o analítico da <strong>Programação</strong>. A fotografia me ensinou a observar detalhes,
                         contextos e histórias; a programação, a estruturar ideias, resolver problemas e transformar conceitos em soluções digitais.
                     </p>
-                </div>
-
-                <div className='perfilImagem'>
-                    <img className='perfilGabi' src={imagem} alt="Gabriela Guedes" />
                 </div>
             </section>
         </>
