@@ -2,51 +2,81 @@
 @import "../../styles/global.scss";
 
 .Trajectory {
-    padding: 20px;
+    padding: 40px 20px;
 
     .titulo {
-        font-size: 54px;
+        font-size: 48px;
+        font-weight: 600;
         text-align: center;
         color: $moon-deep;
-        margin-bottom: 40px;
+        margin-bottom: 48px;
     }
 
     .academico,
     .trabalho {
         background-color: $moon-deep;
-        border-radius: 12px;
+        border-radius: 16px;
         color: $moon-light;
-        padding: 20px;
-        margin: 0 auto 40px;
-        width: 90%;
+        padding: 32px;
+        margin: 0 auto 56px;
+        max-width: 1100px;
     }
 
-    .titulo_card,
-    .descricao_card,
-    .titulo_escolar,
-    .titulo_profissional
-     {
+    .titulo_card {
+        font-size: 28px;
+        font-weight: 600;
         text-align: center;
-        margin-bottom: 12px;
+        margin-bottom: 8px;
+    }
+
+    .descricao_card {
+        font-size: 15px;
+        text-align: center;
+        opacity: 0.85;
+        margin-bottom: 32px;
+    }
+
+    .titulo_escolar,
+    .titulo_profissional {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 8px;
+        text-align: left;
     }
 
     //card academico
     .cardAcademico,
     .cardProfissional {
         display: flex;
-        justify-content: space-between;
-        gap: 20px;
+        justify-content: center;
+        gap: 24px;
         align-items: stretch;
     }
 
-    .ensinoMedio,
+    .cardAcademico > div,
+  .cardProfissional > div {
+    background-color: $moon-purple;
+    border-radius: 14px;
+    padding: 20px;
+    flex: 1;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+  }
+
+  .cardAcademico > div:hover,
+  .cardProfissional > div:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+  }
+
+    .ensinoMedio, 
     .faculdadeInfnet,
     .faculdadeUnisuam {
         background-color: $moon-purple;
         border-radius: 12px;
-        height: 30%;
         width: auto;
-       
     }
 
     .emgepron,
@@ -55,15 +85,12 @@
         background-color: $moon-purple;
         border-radius: 12px;
         height: 30%;
-       
-
     }
 
     @media (max-width: 768px) {
-  .cardAcademico,
-  .cardProfissional {
-    flex-direction: column;
-  }
-}
-
+        .cardAcademico,
+        .cardProfissional {
+            flex-direction: column;
+        }
+    }
 }

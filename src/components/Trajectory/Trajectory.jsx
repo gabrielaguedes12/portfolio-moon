@@ -7,6 +7,7 @@ export default function Trajectory() {
             <div className='academico'>
                 <h1 className='titulo_card'>Acâdemico</h1>
                 <p className='descricao_card'>descrição sobre ambiente academico</p>
+
                 <div className='cardAcademico'>
                     <div className='ensinoMedio'>
                         <h3 className='titulo_escolar'>Ensino Médio Técnico</h3>
@@ -26,6 +27,7 @@ export default function Trajectory() {
             <div className='trabalho'>
                 <h1 className='titulo_card'>Profissional</h1>
                 <p className='descricao_card'>descrição sobre ambiente profissional</p>
+
                 <div className='cardProfissional'>
                     <div className='emgepron'>
                         <h3 className='titulo_profissional'>Jovem Aprendiz na equipe de TI</h3>
@@ -37,11 +39,12 @@ export default function Trajectory() {
                     </div>
                     <div className='cieds'>
                         <h3 className='titulo_profissional'>Estágiaria de Avaliação e Monitoramento de Dados</h3>
-                        <p>Monitoramento e análise de dados em projetos sociais</p>
-                    </div>
+                        <p>Monitoramento e análise de dados em projetos sociais
 
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
-    )
+    );
 }
