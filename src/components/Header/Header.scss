@@ -4,38 +4,57 @@
   display: flex;
   align-items: center;
   gap: 1.5rem;
-background-color: $moon-purple;
- padding: 1rem;
+  padding: 1rem 1.5rem;
+
+  background: linear-gradient(
+    135deg,
+    $moon-dark,
+    $moon-deep
+  );
+
+  border-bottom: 1px solid rgba(251, 215, 148, 0.08);
 
   .header_icon {
     font-size: 30px;
-    background-color: $moon-light;
+    background: linear-gradient(
+      135deg,
+      $moon-light,
+      lighten($moon-light, 6%)
+    );
+    color: $moon-deep;
     border-radius: 50%;
-    padding: 1rem;
+    padding: 0.9rem;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    box-shadow:
+      0 6px 18px rgba(0, 0, 0, 0.35);
   }
 
   .header__menu {
     display: flex;
     align-items: center;
-    gap: 1rem;
-    background-color: $moon-light;
+    gap: 0.4rem;
+    padding: 0.4rem;
+
+    background-color: rgba(128, 144, 118, 0.25); // moon-blue
+    backdrop-filter: blur(6px);
     border-radius: 999px;
-    padding: 0.5rem;
   }
 
   .header__menu a {
-    color: $moon-dark;
+    color: $moon-light;
     font-family: $font-secondary;
     text-decoration: none;
-    padding: 0.5rem 1rem;
+    padding: 0.55rem 1.2rem;
     border-radius: 40px;
-    transition: background-color 0.2s ease;
+    transition: all 0.25s ease;
   }
 
   .header__menu a:hover {
-    background-color: rgba(0, 0, 0, 0.05);
+    background-color: $moon-purple;
+    color: $moon-light;
+    box-shadow: 0 0 0 1px rgba(251, 215, 148, 0.15);
   }
 }

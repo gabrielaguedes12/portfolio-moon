@@ -1,46 +1,70 @@
 @import '../../styles/variables';
 @import '../../styles/global.scss';
 
-.hero{    
-     display: flex;
+.hero {
+  display: flex;
   align-items: center;
-  gap: 1.5rem;
-background-color: $moon-purple;
- padding: 1rem;
+  gap: 2.5rem;
+  padding: 3.5rem 2rem;
 
-    .nomePerfil{
-        font-size: 50px;   
-        position: relative;    
-        z-index: 2;
-        color: $moon-light;
+  background: radial-gradient(
+    circle at top left,
+    lighten($moon-dark, 10%),
+    $moon-deep
+  );
+}
 
-    }
+.nomePerfil {
+  font-size: 54px;
+  color: $moon-light;
+  letter-spacing: 1px;
+}
+
+.descricaoPerfil {
+  color: lighten($moon-blue, 22%);
+  max-width: 460px;
+  line-height: 1.7;
+}
 
 .perfilGabi {
-    width: 15vw;
-    border-radius: 12px;
-    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  width: 15vw;
+  border-radius: 16px;
+  border: 1px solid rgba(251, 215, 148, 0.12);
+  background-color: rgba(17, 26, 25, 0.4);
+  transition: all 0.35s ease;
 }
 
 .perfilGabi:hover {
-    box-shadow:
-        0 0 15px rgba(255, 255, 255, 0.4),
-        0 0 30px rgba(180, 130, 255, 0.6);
-    transform: translateY(-6px);
+  transform: translateY(-8px) scale(1.03);
+  box-shadow:
+    0 20px 45px rgba(0, 0, 0, 0.55),
+    0 0 30px rgba(187, 107, 48, 0.45);
 }
 
-.descricaoPerfil{
-    color: $moon-light;
+/*.hero_button button {
+  background: linear-gradient(
+    135deg,
+    $moon-purple,
+    darken($moon-purple, 12%)
+  );
 
+  color: $moon-light;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 10px;
+
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  cursor: pointer;
+
+  box-shadow:
+    0 10px 25px rgba(187, 107, 48, 0.35);
+
+  transition: all 0.25s ease;
 }
 
-    
-    .hero_button button {
-    background-color: $moon-light;
-    color: $moon-deep;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 6px;
-    cursor: pointer;
-}
-}
+.hero_button button:hover {
+  transform: translateY(-3px);
+  box-shadow:
+    0 16px 40px rgba(187, 107, 48, 0.55);
+}*/
