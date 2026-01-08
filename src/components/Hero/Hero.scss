@@ -1,35 +1,46 @@
 @import '../../styles/variables';
 @import '../../styles/global.scss';
 
-.hero{
-    background-color: $moon-purple;
- color: $moon-light;
+.hero{    
+     display: flex;
+  align-items: center;
+  gap: 1.5rem;
+background-color: $moon-purple;
+ padding: 1rem;
+
     .nomePerfil{
-        font-size: 40px;
-       
+        font-size: 50px;   
+        position: relative;    
         z-index: 2;
+        color: $moon-light;
+
     }
 
-    .perfilGabi {
-        display: flex;
-        justify-content: right;
-        align-items:center;
-    width: 25vw;
-    height: auto;
-    border-radius: 8px;
-}
+.perfilGabi {
+    width: 15vw;
+    border-radius: 12px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
-.hero_imagem{
-.imgProgramacao{
-    width: 25vw;
-    height: auto;
-    border-radius: 8px;
-}
-.imgFotografia{
-    width: 25vw;
-    height: auto;
-    border-radius: 8px;
+.perfilGabi:hover {
+    box-shadow:
+        0 0 15px rgba(255, 255, 255, 0.4),
+        0 0 30px rgba(180, 130, 255, 0.6);
+    transform: translateY(-6px);
 }
 
+.descricaoPerfil{
+    color: $moon-light;
+
+}
+
+    
+    .hero_button button {
+    background-color: $moon-light;
+    color: $moon-deep;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
 }
