@@ -5,10 +5,16 @@ export default function Skills(){
         <section>
         <div>
          <h2>Hard Skills</h2>
-        </div>
-        <div>
-         <h2>Soft Skills</h2>
-        </div>
+         <h3>Front-end</h3>
+         {/*Adicionar a coluna horizontal de porcentagem de acordo com a linguagem/framework*/}
+
+         <h3>Back-end</h3>
+         {/*Adicionar a coluna horizontal de porcentagem de acordo com a linguagem/framework*/}
+
+         <h3>Ferramentas</h3>
+         {/*Adicionar a coluna horizontal de porcentagem de acordo com a linguagem/framework*/}
+
+        </div>        
     </section>
     );
 }
