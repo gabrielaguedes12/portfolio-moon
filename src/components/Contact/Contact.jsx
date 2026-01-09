@@ -3,17 +3,26 @@ import './Contact.scss';
 export default function Contact() {
     return (
         <>
-        {/*Contato*/}
-        <section className='contact'>
-            <div>
-             <h2>Entre em Contato</h2>
-            </div>
-        </section>
+            {/*Contato*/}
+            <section className='contact'>
+                <div>
+                    <div>
+                        <h2>Entre em <strong>Contato</strong></h2>
+                        <p>Tem uma ideia? Vamos Construir algo excepcional juntos.</p>
+                        <p>E-mail</p>
+                        <p>gabr1.profissional@gmail.com</p>
+                    </div>
+                    <div>
+                        <p>Linkedin</p>
+                        <p></p>
+                    </div>
+                </div>
 
-        {/*Dados*/}
-        <section className='redesSociais'>
-            <h2>Redes Sociais</h2>
-        </section>
+                {/*Dados*/}
+                <div>
+                    
+                </div>
+            </section>
         </>
     );
 }

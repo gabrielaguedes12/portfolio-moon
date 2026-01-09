@@ -12,14 +12,20 @@ export default function Header() {
                 <FaComputer />
             </div>
 
-            <nav className={`header__menu ${menuOpen ?'open':''}`}>
-            <a href="#sobre" onClick={() => setMenuOpen(false)}>Sobre Mim</a>
-            <a href="#trajetoria" onClick={() => setMenuOpen(false)}>Trajetória</a>
-            <a href="#skills" onClick={() => setMenuOpen(false)}>Skills</a>
-            <a href="#projetos" onClick={() => setMenuOpen(false)}>Projetos</a>
-            <a href="#contato" onClick={() => setMenuOpen(false)}>Contato</a>
-        </nav>
+            <nav className={`header_menu ${menuOpen ? 'open' : ''}`}>
+                <a href="#sobre" onClick={() => setMenuOpen(false)}>Sobre Mim</a>
+                <a href="#trajetoria" onClick={() => setMenuOpen(false)}>Trajetória</a>
+                <a href="#skills" onClick={() => setMenuOpen(false)}>Skills</a>
+                <a href="#projetos" onClick={() => setMenuOpen(false)}>Projetos</a>
+                <a href="#contato" onClick={() => setMenuOpen(false)}>Contato</a>
+            </nav>
 
+            <button
+                className='header_hamburger' onClick={() => setMenuOpen(!menuOpen)}
+                aria-label="Abrir menu"
+            >
+                {menuOpen ? <FiX /> : <FiMenu />}
+            </button>
         </header >
     );
 }

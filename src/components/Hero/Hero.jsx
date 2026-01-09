@@ -1,44 +1,53 @@
 import './Hero.scss';
-import imagem from '../../img/perfilGabi.png';
-import { Link } from 'react-router-dom';
-import React from 'react';
+import imagem from '../../img/perfil gabi.png';
 
 export default function Hero() {
-    const GitHub = () => {
-        window.open('https://github.com/gabrielaguedes12', '_blank');
-    };
+  const GitHub = () => {
+    window.open('https://github.com/gabrielaguedes12', '_blank');
+  };
 
-    return (
-        <>
-            <section className='hero'>
-                <div className='hero_perfil'>
-                    <div className='perfilTexto'>
-                        <h1 className='nomePerfil'>Desenvolvedora Full-Stack</h1>
-                        <h1 className='nomePerfil'>Gabriela Guedes</h1>
-                        <div className='hero_button'>
-                            <button type='button' >
-                                <a href="/curriculo/Gabriela_Guedes_Curriculo.pdf" download="Gabriela_Guedes_Curriculo">Currículo</a>
-                            </button>
-                            <button type="button" onClick={GitHub}>
-                                GitHub
-                            </button>
-                        </div>
-                    </div>
-                    <div className='perfilImagem'>
-                        <img className='perfilGabi' src={imagem} alt="Gabriela Guedes" />
-                    </div>
-                </div>
+  return (
+    <section className="hero">
 
+      {/* COLUNA ESQUERDA */}
+      <div className="hero_perfil">
+        <div className="perfilTexto">
+          <h1 className="nomePerfil">Desenvolvedora Full-Stack</h1>
+          <h1 className="nomePerfil destaque">Gabriela Guedes</h1>
 
+          <div className="hero_button">
+            <button>
+              <a
+                href="/curriculo/Gabriela_Guedes_Curriculo.pdf"
+                download="Gabriela_Guedes_Curriculo"
+              >
+                Currículo
+              </a>
+            </button>
 
-                <div className='descricaoTexto'>
-                    <p className='descricaoPerfil'>
-                        Para você me conhecer melhor, é necessário saber que carrego dois olhares complementares:
-                        o profundo da <strong>Fotografia</strong> e o analítico da <strong>Programação</strong>. A fotografia me ensinou a observar detalhes,
-                        contextos e histórias; a programação, a estruturar ideias, resolver problemas e transformar conceitos em soluções digitais.
-                    </p>
-                </div>
-            </section>
-        </>
-    );
+            <button onClick={GitHub}>GitHub</button>
+          </div>
+        </div>
+      </div>
+
+      {/* COLUNA DIREITA */}
+      <div className="hero_imagem">
+        <div className="perfilImagem">
+          <img className="perfilGabi" src={imagem} alt="Gabriela Guedes" />
+        </div>
+
+        <div className="descricaoTexto">
+          <p className="descricaoPerfil">
+            Para você me conhecer melhor, é necessário saber que carrego dois
+            olhares complementares: o profundo da <strong>Fotografia</strong> e o
+            analítico da <strong>Programação</strong>. A fotografia me ensinou a
+            observar detalhes, contextos e histórias; a programação, a estruturar
+            ideias, resolver problemas e transformar conceitos em soluções
+            digitais.
+          </p>
+        </div>
+      </div>
+
+    </section>
+  );
 }
