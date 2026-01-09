@@ -1,8 +1,7 @@
-@import "../../styles/variables";
+@import "../../styles/variables.scss";
 @import "../../styles/global.scss";
 //@import "../../img/background_hero.jpg";
 
-/* GRID PRINCIPAL */
 .hero {
   min-height: 100vh;
   padding: 2rem 6vw;
@@ -13,7 +12,6 @@
   gap: 3rem;
 }
 
-/* COLUNA ESQUERDA */
 .hero_perfil {
   display: flex;
   justify-content: center;
@@ -36,7 +34,6 @@
   color: $moon-light;
 }
 
-/* BOTÕES */
 .hero_button {
   display: flex;
   gap: 1rem;
@@ -65,7 +62,6 @@
   box-shadow: 0 16px 40px rgba(187, 107, 48, 0.55);
 }
 
-/* COLUNA DIREITA */
 .hero_imagem {
   position: relative;
   display: flex;
@@ -73,7 +69,6 @@
   align-items: flex-end;
 }
 
-/* IMAGEM */
 .perfilImagem {
   width: 420px;
   position: relative;
@@ -95,7 +90,6 @@
     0 0 30px rgba(187, 107, 48, 0.45);
 }
 
-/* DESCRIÇÃO SOBREPOSTA */
 .descricaoTexto {
   position: absolute;
   bottom: -60px;
@@ -115,6 +109,9 @@
   line-height: 1.7;
 }
 
+/*responsividade*/
+
+/*Celular*/
 @media (max-width: 600px) {
   .hero {
     grid-template-columns: 1fr;
@@ -157,6 +154,7 @@
   }
 }
 
+/*tablet*/
 @media (min-width: 601px) and (max-width: 1024px) {
   .hero {
     grid-template-columns: 1fr;
@@ -185,6 +183,7 @@
   }
 }
 
+/*notebook*/
 @media (min-width: 1025px) and (max-width: 1439px) {
   .perfilImagem {
     width: 380px;
@@ -197,6 +196,7 @@
   }
 }
 
+/*desktop*/
 @media (min-width: 1440px) {
   .hero {
     padding: 8rem 10vw;

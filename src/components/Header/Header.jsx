@@ -13,6 +13,7 @@ export default function Header() {
             </div>
 
             <nav className={`header_menu ${menuOpen ? 'open' : ''}`}>
+                <a href="#hero" onClick={() => setMenuOpen(false)}>Home</a>
                 <a href="#sobre" onClick={() => setMenuOpen(false)}>Sobre Mim</a>
                 <a href="#trajetoria" onClick={() => setMenuOpen(false)}>Trajetória</a>
                 <a href="#skills" onClick={() => setMenuOpen(false)}>Skills</a>

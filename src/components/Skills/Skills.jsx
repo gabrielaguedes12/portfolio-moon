@@ -3,8 +3,8 @@ import './Skills.scss';
 export default function Skills(){
     return(
         <section>
-        <div>
-         <h2>Hard Skills</h2>
+            <h1>Habilidades</h1>
+        <div>         
          <h3>Front-end</h3>
          {/*Adicionar a coluna horizontal de porcentagem de acordo com a linguagem/framework*/}
 

@@ -9,7 +9,6 @@ export default function Hero() {
   return (
     <section className="hero">
 
-      {/* COLUNA ESQUERDA */}
       <div className="hero_perfil">
         <div className="perfilTexto">
           <h1 className="nomePerfil">Desenvolvedora Full-Stack</h1>
@@ -30,7 +29,6 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* COLUNA DIREITA */}
       <div className="hero_imagem">
         <div className="perfilImagem">
           <img className="perfilGabi" src={imagem} alt="Gabriela Guedes" />

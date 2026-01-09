@@ -1,5 +1,6 @@
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
+import SobreMim from "./components/SobreMim/SobreMim";
 {/*import Trajectory from "./components/Trajectory/Trajectory";
 import Skills from "./components/Skills/Skills";
 import Projects from "./components/Projects/Projects";
@@ -9,7 +10,8 @@ export default function App() {
   return (
    <>
    <Header/>  
-  <Hero/>
+  <Hero/>   
+   <SobreMim/>
    {/* <Trajectory/>
    <Skills/>
    <Projects/>
