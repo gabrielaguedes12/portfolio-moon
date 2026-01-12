@@ -4,9 +4,9 @@ import programacao from "../../img/background_hero.jpg"
 export default function(){
     return(
         <section>
-            <div>
+            {/*<div>
                 <img src={programacao} alt="" />
-            </div>
+            </div>*/}
             <div>
                 <h2>Sobre <strong>mim</strong></h2>
                 <p></p>

@@ -3,14 +3,14 @@
 //@import "../../img/background_hero.jpg";
 
 .hero {
-  min-height: 100vh;
-  padding: 1rem 6vw;
+padding: 3rem 6vw 120px;  
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   background: radial-gradient(circle at top left, lighten($moon-dark, 10%), $moon-deep);
-  gap: 3rem;
+  gap: 1rem 3rem;
 }
+
 
 .hero_profile {
   display: flex;
@@ -93,13 +93,13 @@
 .description_text {
   position: absolute;
   bottom: -60px;
-  left: -140px;
-  max-width: 400px;
-  font-size: 14px;
+  left: -100px;
+  max-width: 350px;
+  font-size: 12px;
   background: rgba(17, 26, 25, 0.85);
   backdrop-filter: blur(8px);
   padding: 2rem;
-  border-radius: 16px;
+  border-radius: 12px;
   z-index: 2;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
 }

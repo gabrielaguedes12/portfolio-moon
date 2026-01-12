@@ -1,4 +1,4 @@
-@import '../../styles/variables';
+@import "../../styles/variables";
 
 .header {
   position: sticky;
@@ -16,11 +16,7 @@
 
 .header_icon {
   font-size: 28px;
-  background: linear-gradient(
-    135deg,
-    $moon-light,
-    lighten($moon-light, 6%)
-  );
+  background: linear-gradient(135deg, $moon-light, lighten($moon-light, 6%));
   color: $moon-deep;
   border-radius: 50%;
   padding: 0.8rem;
@@ -49,10 +45,6 @@
     padding: 0.55rem 1.2rem;
     border-radius: 40px;
     transition: all 0.25s ease;
-
-    &:hover {
-      
-    }
   }
 }
 
@@ -64,7 +56,6 @@
   font-size: 1.8rem;
   cursor: pointer;
 }
-
 
 @media (max-width: 767px) {
   .header_hamburger {
