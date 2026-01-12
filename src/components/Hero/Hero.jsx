@@ -8,12 +8,15 @@ export default function Hero() {
 
   return (
     <section className="hero">
+      {/* div para o perfil geral*/}
+      <div className="hero_profile">
+        <div className="hero_text">
 
-      <div className="hero_perfil">
-        <div className="perfilTexto">
-          <h1 className="nomePerfil">Desenvolvedora Full-Stack</h1>
-          <h1 className="nomePerfil destaque">Gabriela Guedes</h1>
+          {/*frases de perfil*/}
+          <h1 className="name_profile">Desenvolvedora Full-Stack</h1>
+          <h1 className="name_profile">Gabriela Guedes</h1>
 
+          {/*div botão*/}
           <div className="hero_button">
             <button>
               <a
@@ -23,19 +26,19 @@ export default function Hero() {
                 Currículo
               </a>
             </button>
-
             <button onClick={GitHub}>GitHub</button>
           </div>
         </div>
       </div>
 
-      <div className="hero_imagem">
-        <div className="perfilImagem">
-          <img className="perfilGabi" src={imagem} alt="Gabriela Guedes" />
+      {/* div da direita, imagem e descrição */}
+      <div className="hero_image">
+        <div className="image_profile">
+          <img className="profile_gabi" src={imagem} alt="Gabriela Guedes" />
         </div>
 
-        <div className="descricaoTexto">
-          <p className="descricaoPerfil">
+        <div className="description_text">
+          <p className="description_profile">
             Para você me conhecer melhor, é necessário saber que carrego dois
             olhares complementares: o profundo da <strong>Fotografia</strong> e o
             analítico da <strong>Programação</strong>. A fotografia me ensinou a
@@ -45,7 +48,6 @@ export default function Hero() {
           </p>
         </div>
       </div>
-
     </section>
   );
 }

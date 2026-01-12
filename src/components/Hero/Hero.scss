@@ -4,7 +4,7 @@
 
 .hero {
   min-height: 100vh;
-  padding: 2rem 6vw;
+  padding: 1rem 6vw;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -12,25 +12,25 @@
   gap: 3rem;
 }
 
-.hero_perfil {
+.hero_profile {
   display: flex;
   justify-content: center;
 }
 
-.perfilTexto {
+.hero_text {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
-.nomePerfil {
+.name_profile {
   font-size: 4rem;
   line-height: 1.05;
   color: $moon-light;
   letter-spacing: 1px;
 }
 
-.nomePerfil.destaque {
+.name_profile.destaque {
   color: $moon-light;
 }
 
@@ -62,20 +62,20 @@
   box-shadow: 0 16px 40px rgba(187, 107, 48, 0.55);
 }
 
-.hero_imagem {
+.hero_image {
   position: relative;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
 }
 
-.perfilImagem {
+.image_profile {
   width: 420px;
   position: relative;
   z-index: 1;
 }
 
-.perfilGabi {
+.profile_gabi {
   width: 100%;
   border-radius: 16px;
   border: 1px solid rgba(251, 215, 148, 0.12);
@@ -83,14 +83,14 @@
   transition: all 0.35s ease;
 }
 
-.perfilGabi:hover {
+.profile_gabi:hover {
   transform: translateY(-8px) scale(1.03);
   box-shadow:
     0 20px 45px rgba(0, 0, 0, 0.55),
     0 0 30px rgba(187, 107, 48, 0.45);
 }
 
-.descricaoTexto {
+.description_text {
   position: absolute;
   bottom: -60px;
   left: -140px;
@@ -104,115 +104,7 @@
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
 }
 
-.descricaoPerfil {
+.description_profile {
   color: lighten($moon-blue, 22%);
   line-height: 1.7;
-}
-
-/*responsividade*/
-
-/*Celular*/
-@media (max-width: 600px) {
-  .hero {
-    grid-template-columns: 1fr;
-    padding: 3rem 1.5rem;
-    gap: 4rem;
-  }
-
-  .nomePerfil {
-    font-size: 2.2rem;
-    text-align: center;
-  }
-
-  .perfilTexto {
-    align-items: center;
-  }
-
-  .hero_button {
-    width: 100%;
-    flex-direction: column;
-  }
-
-  .hero_button button {
-    width: 100%;
-  }
-
-  .hero_imagem {
-    justify-content: center;
-  }
-
-  .perfilImagem {
-    width: 260px;
-  }
-
-  .descricaoTexto {
-    position: relative;
-    bottom: 0;
-    left: 0;
-    margin-top: 1.5rem;
-    max-width: 100%;
-  }
-}
-
-/*tablet*/
-@media (min-width: 601px) and (max-width: 1024px) {
-  .hero {
-    grid-template-columns: 1fr;
-    padding: 4rem 4vw;
-    gap: 5rem;
-  }
-
-  .perfilTexto {
-    align-items: center;
-    text-align: center;
-  }
-
-  .hero_imagem {
-    justify-content: center;
-  }
-
-  .perfilImagem {
-    width: 360px;
-  }
-
-  .descricaoTexto {
-    position: relative;
-    bottom: 0;
-    left: 0;
-    margin-top: 2rem;
-  }
-}
-
-/*notebook*/
-@media (min-width: 1025px) and (max-width: 1439px) {
-  .perfilImagem {
-    width: 380px;
-  }
-
-  .descricaoTexto {
-    left: -120px;
-    bottom: -50px;
-    max-width: 400px;
-  }
-}
-
-/*desktop*/
-@media (min-width: 1440px) {
-  .hero {
-    padding: 8rem 10vw;
-  }
-
-  .nomePerfil {
-    font-size: 4.5rem;
-  }
-
-  .perfilImagem {
-    width: 480px;
-  }
-
-  .descricaoTexto {
-    left: -160px;
-    bottom: -70px;
-    max-width: 460px;
-  }
 }
